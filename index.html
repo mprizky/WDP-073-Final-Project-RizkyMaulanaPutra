@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MP Car Wash</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <style>
         body {
             background-color: #f8f9fa; /* Light gray background */
@@ -74,42 +74,105 @@
     </nav>
 
     <div class="container mt-5 pt-5">
-        <div id="carouselWithIndicators" class="carousel slide" data-bs-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="0" class="active"></li>
-                <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="1"></li>
-                <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="https://apwfuel.com.au/wp-content/uploads/2022/08/shutterstock_1859193349-scaled-2560x1280.jpg" class="d-block w-100" alt="Slide 1">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h1 class="display-4">Welcome to MP Car Wash</h1>
-                        <p class="lead">Your trusted mobile car wash service that comes to your doorstep.</p>
-                        <button class="btn btn-primary btn-lg" id="order-now" data-bs-toggle="modal" data-bs-target="#orderModal">Order Now</button>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFdqm1ZdHmcjFMeZQKTREfqCrFMPbz_D6jdw&s" class="d-block w-100" alt="Slide 2">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://quicksetautoglass.com/wp-content/uploads/freshizer/e1abe7d378fed5a2c8b9cf3eb31628e4_automatic-car-wash-basics-950-c-90.jpg" class="d-block w-100" alt="Slide 3">
-                </div>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://apwfuel.com.au/wp-content/uploads/2022/08/shutterstock_1859193349-scaled-2560x1280.jpg" class="d-block w-100" alt="MP Car Wash 1">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>MP Car Wash</h5>
+              <p>Your Car Deserves the Best – We Deliver Sparkling Clean Every Time!</p>
             </div>
-            <a class="carousel-control-prev" href="#carouselWithIndicators" role="button" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselWithIndicators" role="button" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </a>
+          </div>
+          <div class="carousel-item">
+            <img src="https://inoutcarwash.com/wp-content/uploads/2020/10/shutterstock_139337444-copia-2-3600x1800-1-scaled-1.jpg" class="d-block w-100" alt="MP Car Wash 2">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>MP Car Wash</h5>
+              <p>Your Car Deserves the Best – We Deliver Sparkling Clean Every Time!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.hydrosystemsco.com/content/dam/psg/hydro/images/blog/blog-images/blue-bmw-car-3943874-scaled-2560x1280.jpg" class="d-block w-100" alt="MP Car Wash 3">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>MP Car Wash</h5>
+              <p>Your Car Deserves the Best – We Deliver Sparkling Clean Every Time!</p>
+            </div>
+          </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
-        <!-- Order Now button outside carousel -->
-        <div class="text-center mt-3">
-            <button class="btn btn-primary btn-lg" id="order-now-external">Order Now</button>
-        </div>
+        <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary d-grid gap-2 col-6 mx-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Order Now
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="orderModalLabel">Our Services</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                      <table class="table">
+                          <thead>
+                              <tr>
+                                  <th scope="col">Service</th>
+                                  <th scope="col">Description</th>
+                                  <th scope="col">Price</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td>Basic Wash</td>
+                                  <td>Exterior wash and dry</td>
+                                  <td>Rp 40.000</td>
+                              </tr>
+                              <tr>
+                                  <td>Premium Wash</td>
+                                  <td>Exterior and interior cleaning</td>
+                                  <td>Rp 80.000</td>
+                              </tr>
+                              <!-- Add more services here -->
+                          </tbody>
+                      </table>
+                      <form id="orderForm">
+                          <div class="mb-3">
+                              <label for="service" class="form-label">Select Service:</label>
+                              <select class="form-select" id="service" name="service">
+                                  <option value="basic">Basic Wash</option>
+                                  <option value="premium">Premium Wash</option>
+                                  <!-- Add more services here -->
+                              </select>
+                          </div>
+                          <div class="mb-3">
+                              <label for="date" class="form-label">Preferred Date:</label>
+                              <input type="date" class="form-control" id="date" name="date">
+                          </div>
+                          <div class="mb-3">
+                              <label for="time" class="form-label">Preferred Time:</label>
+                              <input type="time" class="form-control" id="time" name="time">
+                          </div>
+                          
+                          <button type="submit" class="btn btn-primary">Submit Order</button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+          </div>
 
         <section id="portfolio" class="container mt-5">
             <h2>Portfolio</h2>
@@ -125,7 +188,7 @@
             </blockquote>
             <div class="row">
                 <div class="col-md-6">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm0xYAB-CNvXKmCFyeM8xUXEX3XqKdJaFfxg&s" alt="Before After Wash" class="img-fluid">
+                    <img src="https://i.ytimg.com/vi/tGnf8G8A8qU/maxresdefault.jpg" alt="Before After Wash" class="img-fluid">
                 </div>
                 
             </div>
@@ -227,66 +290,15 @@
             </form>
         </section>
 
-        <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="orderModalLabel">Our Services</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Service</th>
-                                    <th scope="col">Description</th>
-                                    <th scope="col">Price</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Basic Wash</td>
-                                    <td>Exterior wash and dry</td>
-                                    <td>$20</td>
-                                </tr>
-                                <tr>
-                                    <td>Premium Wash</td>
-                                    <td>Exterior and interior cleaning</td>
-                                    <td>$50</td>
-                                </tr>
-                                <!-- Add more services here -->
-                            </tbody>
-                        </table>
-                        <form id="orderForm">
-                            <div class="mb-3">
-                                <label for="service" class="form-label">Select Service:</label>
-                                <select class="form-select" id="service" name="service">
-                                    <option value="basic">Basic Wash</option>
-                                    <option value="premium">Premium Wash</option>
-                                    <!-- Add more services here -->
-                                </select>
-                            </div>
-                            <div class="mb-3">
-                                <label for="date" class="form-label">Preferred Date:</label>
-                                <input type="date" class="form-control" id="date" name="date">
-                            </div>
-                            <div class="mb-3">
-                                <label for="time" class="form-label">Preferred Time:</label>
-                                <input type="time" class="form-control" id="time" name="time">
-                            </div>
-                            <div class="mb-3">
-                                <label for="address" class="form-label">Service Address:</label>
-                                <input type="text" class="form-control" id="address" name="address">
-                            </div>
-                            <button type="submit" class="btn btn-primary">Submit Order</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <footer class="bg-dark text-white-50 text-center mt-5 p-3">
+      $copy; 2020 MP Car Wash - <a href="#" class="text-white-50">GitHub</a> | <a href="#" class="text-white-50">LinkedIn</a> | <a href="#" class="text-white-50">Twitter</a>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
         document.addEventListener('DOMContentLoaded', (event) => {
